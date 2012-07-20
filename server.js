@@ -2,6 +2,7 @@ var express = require('express');
 var app = express.createServer();
 
 app.use(express.static(__dirname + '/public'));
+app.use('/engine',express.static(__dirname + '/engine'));
 
 module.exports = app
 
