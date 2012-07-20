@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<style type='text/css'>
+
+canvas:focus {
+    outline: none;
+}
+
+</style>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/math/Rand.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/math/Matrix.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/math/Vector.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/math/Box.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/math/Line.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/math/Plane.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/graphics/excanvas.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/graphics/Graphics.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/graphics/Sprite.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/graphics/animation/Animation.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/graphics/animation/SpriteAnimation.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/sound/Sound.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/input/Input.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/input/Mouse.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/input/Keyboard.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/timer/Timer.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/ui/loader/Loader.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/ui/loader/ImageLoader.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/ui/loader/SoundLoader.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/ui/context/Context.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/ui/context/Ticker.js'></script>
+<script type='text/javascript' src='http://redframe.sourceforge.net/js/ui/UI.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/logic/Object/Object.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/logic/Object/Character.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/logic/Terrain/Terrain.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/logic/Terrain/TerroidTerrain.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/logic/World/World.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/logic/World/TerroidWorld.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/ui/context/ActionsContext.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/ui/context/WorldContext.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/ui/context/MapContext.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/ui/context/TerroidContext.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/ui/WorldUI.js'></script>
+<script type='text/javascript' src='http://terroid.sourceforge.net/js/ui/TerroidUI.js'></script>
+<script type='text/javascript'>
+
+function onLoad() {
+    return new TerroidUI(
+        "canvas",
+        "http://terroid.sourceforge.net"
+    );
+}
+
+</script>
+</head>
+<body onLoad='onLoad()'>
+<table width='100%' height='100%'>
+<tr valign='center'>
+<td align='center'><canvas id='canvas'></canvas></td>
+</tr>
+</table>
+</body>
+</html>
