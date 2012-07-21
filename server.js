@@ -6,7 +6,7 @@ app.use('/engine',express.static(__dirname + '/engine'));
 
 module.exports = app
 
-var ipaddr  = process.env.OPENSHIFT_INTERNAL_IP || "127.0.0.1";
+var ipaddr  = process.env.OPENSHIFT_INTERNAL_IP || process.env.IP ||  "127.0.0.1";
 var port    = process.env.OPENSHIFT_INTERNAL_PORT || process.env.C9_PORT || 8080;
 
 app.listen(port,ipaddr, function(){
